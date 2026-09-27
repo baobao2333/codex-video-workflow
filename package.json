@@ -1,0 +1,1 @@
+{"name":"codex-make-it-happen","private":true,"version":"1.0.0","type":"module","scripts":{"frames":"node film.mjs","preview":"node render.mjs 0 40 preview-picture.mp4 --preview","render":"node render.mjs 0 40 picture.mp4","check":"node check.mjs","review":"node serve.mjs"},"dependencies":{"@napi-rs/canvas":"1.0.9"}}

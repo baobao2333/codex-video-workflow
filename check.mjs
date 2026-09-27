@@ -1,0 +1,16 @@
+import {render,T,ROOT} from './film.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const hash=f=>createHash('sha256').update(render(f).data()).digest('hex');
+const frames=[0,79,199,201,540,611,899,1140,1202,1517,1820,2051,2380];
+const before=frames.map(hash);
+const after=new Map([...frames].reverse().map(f=>[f,hash(f)]));
+const determinism=frames.map((f,i)=>({frame:f,equal:before[i]===after.get(f)}));
+if(determinism.some(r=>!r.equal))throw Error('Non-deterministic frame!');
+const endFrames=[2300,2340,2399].map(hash);
+if(new Set(endFrames).size!==1)throw Error('Final title is not stable');
+const boundaries=T.scenes.slice(1).map(s=>Math.round(s.start*T.fps));
+for(const b of boundaries)for(const offset of [-6,-1,0,1,6])render(b+offset).savePng(path.join(ROOT,'frames',`cut-${String(b).padStart(4,'0')}-${offset+6}.png`));
+const report={determinism,finalCardStable:true,sceneCount:T.scenes.length,frames:T.duration*T.fps,cutFrames:boundaries.length*5};
+fs.writeFileSync(path.join(ROOT,'dist','frame-check.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

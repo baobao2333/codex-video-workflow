@@ -1,0 +1,22 @@
+{
+  "title": "Codex · 让想法发生",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "bpm": 144,
+  "duration": 40,
+  "scenes": [
+    {"id":"spark","start":0,"end":3.333333,"title":"有个想法。","en":"EVERYTHING STARTS HERE","still":1.9},
+    {"id":"happen","start":3.333333,"end":6.666667,"title":"让它发生。","en":"MAKE IT HAPPEN","still":5.25},
+    {"id":"prompt","start":6.666667,"end":10,"title":"从一句话。","en":"START WITH A THOUGHT","still":8.6},
+    {"id":"build","start":10,"end":13.333333,"title":"拆开复杂。","en":"FIND THE STRUCTURE","still":11.8},
+    {"id":"code","start":13.333333,"end":16.666667,"title":"写成代码。","en":"GIVE IT FORM","still":15.2},
+    {"id":"run","start":16.666667,"end":20,"title":"运行。看见。","en":"RUN / SEE / LEARN","still":18.5},
+    {"id":"iterate","start":20,"end":23.333333,"title":"再试一次。","en":"A BETTER WAY THROUGH","still":21.8},
+    {"id":"refine","start":23.333333,"end":26.666667,"title":"越做，越接近。","en":"KEEP MAKING","still":25.1},
+    {"id":"possibility","start":26.666667,"end":30,"title":"把可能，做出来。","en":"IDEA → REALITY","still":28.6},
+    {"id":"made","start":30,"end":33.333333,"title":"这支片，也是。","en":"THIS FILM, TOO.","still":31.8},
+    {"id":"brand","start":33.333333,"end":36.666667,"title":"Codex","en":"THINK IT. MAKE IT.","still":35.1},
+    {"id":"end","start":36.666667,"end":40,"title":"让想法发生。","en":"BUILD WITH CODEX","still":38.5}
+  ]
+}

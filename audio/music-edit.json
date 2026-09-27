@@ -1,0 +1,329 @@
+{
+  "provider": "procedural",
+  "seed": 20260927,
+  "bpm": 144,
+  "duration": 40,
+  "sample_rate": 48000,
+  "bars": 24,
+  "key": "D minor",
+  "kick_times": [
+    0.0,
+    0.833333,
+    1.666667,
+    2.5,
+    3.333333,
+    3.75,
+    4.166667,
+    4.583333,
+    5.0,
+    5.416667,
+    5.833333,
+    6.25,
+    6.666667,
+    7.083333,
+    7.5,
+    7.916667,
+    8.333333,
+    8.75,
+    9.166667,
+    9.583333,
+    10.0,
+    10.416667,
+    10.833333,
+    11.25,
+    11.666667,
+    12.083333,
+    12.5,
+    12.916667,
+    13.333333,
+    13.75,
+    14.166667,
+    14.583333,
+    15.0,
+    15.416667,
+    15.833333,
+    16.25,
+    16.666667,
+    17.083333,
+    17.5,
+    17.916667,
+    18.333333,
+    18.75,
+    19.166667,
+    19.583333,
+    23.333333,
+    23.75,
+    24.166667,
+    24.583333,
+    25.0,
+    25.416667,
+    25.833333,
+    26.25,
+    26.666667,
+    27.083333,
+    27.5,
+    27.916667,
+    28.333333,
+    28.75,
+    29.166667,
+    29.583333,
+    30.0,
+    30.416667,
+    30.833333,
+    31.25,
+    31.666667,
+    32.083333,
+    32.5,
+    32.916667,
+    33.333333,
+    33.75,
+    34.166667,
+    34.583333,
+    35.0,
+    35.416667,
+    35.833333,
+    36.25,
+    36.666667
+  ],
+  "synthesis": "Local NumPy/SciPy synthesis; no downloaded samples, model or API.",
+  "arrangement": "intro → groove → layered motif → break (20s) → restart (23.333s) → brand → decay",
+  "selection_reason": "No optional input supplied; composing locally.",
+  "output_bpm": 144,
+  "output_duration": 40,
+  "events": [
+    {
+      "time": 0.0,
+      "frame": 0,
+      "type": "cut",
+      "gain": 0.23
+    },
+    {
+      "time": 3.333333,
+      "frame": 200,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 3.063333,
+      "frame": 184,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 6.666667,
+      "frame": 400,
+      "type": "cut",
+      "gain": 0.23
+    },
+    {
+      "time": 6.396667,
+      "frame": 384,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 10.0,
+      "frame": 600,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 9.73,
+      "frame": 584,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 13.333333,
+      "frame": 800,
+      "type": "cut",
+      "gain": 0.23
+    },
+    {
+      "time": 13.063333,
+      "frame": 784,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 16.666667,
+      "frame": 1000,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 20.0,
+      "frame": 1200,
+      "type": "cut",
+      "gain": 0.23
+    },
+    {
+      "time": 23.333333,
+      "frame": 1400,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 23.063333,
+      "frame": 1384,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 26.666667,
+      "frame": 1600,
+      "type": "cut",
+      "gain": 0.23
+    },
+    {
+      "time": 30.0,
+      "frame": 1800,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 33.333333,
+      "frame": 2000,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 33.063333,
+      "frame": 1984,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 36.666667,
+      "frame": 2200,
+      "type": "impact",
+      "gain": 0.34
+    },
+    {
+      "time": 36.396667,
+      "frame": 2184,
+      "type": "sweep",
+      "gain": 0.22
+    },
+    {
+      "time": 6.68,
+      "frame": 401,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 6.805,
+      "frame": 408,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 6.93,
+      "frame": 416,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.055,
+      "frame": 423,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.18,
+      "frame": 431,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.305,
+      "frame": 438,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.43,
+      "frame": 446,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.555,
+      "frame": 453,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.68,
+      "frame": 461,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.805,
+      "frame": 468,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 7.93,
+      "frame": 476,
+      "type": "type",
+      "gain": 0.06
+    },
+    {
+      "time": 10.1,
+      "frame": 606,
+      "type": "assembly",
+      "gain": 0.085
+    },
+    {
+      "time": 10.308333,
+      "frame": 618,
+      "type": "assembly",
+      "gain": 0.085
+    },
+    {
+      "time": 10.516667,
+      "frame": 631,
+      "type": "assembly",
+      "gain": 0.085
+    },
+    {
+      "time": 10.725,
+      "frame": 644,
+      "type": "assembly",
+      "gain": 0.085
+    },
+    {
+      "time": 10.933333,
+      "frame": 656,
+      "type": "assembly",
+      "gain": 0.085
+    },
+    {
+      "time": 20,
+      "frame": 1200,
+      "type": "reset",
+      "gain": 0.23
+    },
+    {
+      "time": 23.333333,
+      "frame": 1400,
+      "type": "restart",
+      "gain": 0.38
+    },
+    {
+      "time": 36.666667,
+      "frame": 2200,
+      "type": "logo",
+      "gain": 0.2
+    },
+    {
+      "time": 36.666667,
+      "frame": 2200,
+      "type": "logo-sub",
+      "gain": 0.34
+    }
+  ]
+}
