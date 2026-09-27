@@ -1,0 +1,1 @@
+{"name":"video-workflow-promo","private":true,"type":"module","version":"1.0.0","scripts":{"stills":"node render.mjs --stills","render":"node render.mjs","proof":"node render.mjs --start 12 --end 20 --preview","build":"node render.mjs && python finish.py"},"dependencies":{"three":"0.170.0","playwright-core":"1.63.0"}}

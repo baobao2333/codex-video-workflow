@@ -32,12 +32,12 @@ def make_music(mode, source, timeline, directory):
         with warnings.catch_warnings():
             warnings.simplefilter('ignore')
             _, raw = wavfile.read(decoded)
-        if not len(raw) or not np.isfinite(raw).all() or np.max(np.abs(raw)) < 1e-7:
-            raise ValueError('Supplied audio is empty, silent or non-finite')
+        if len(raw) < 4800 or not np.isfinite(raw).all() or np.max(np.abs(raw)) < 1e-7:
+            raise ValueError('Supplied audio is shorter than 0.1s, silent or non-finite')
     except (subprocess.CalledProcessError, ValueError):
         if mode == 'file': raise
         audio, info = compose(timeline['bpm'], timeline['duration'])
-        info['selection_reason'] = 'Optional audio could not be decoded or was silent; composed locally.'
+        info['selection_reason'] = 'Optional audio could not be decoded, was shorter than 0.1s, or was silent; composed locally.'
         return audio, info
     count = round(timeline['duration']*48000)
     audio = raw.astype(np.float32)

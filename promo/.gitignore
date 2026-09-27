@@ -1,0 +1,9 @@
+node_modules/
+frames/
+dist/*
+!dist/video-workflow.mp4
+!dist/workflow-preview.mp4
+!dist/poster.jpg
+!dist/verification.json
+!dist/frame-check.json
+audio/

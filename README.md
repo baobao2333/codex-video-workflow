@@ -4,13 +4,17 @@
 
 **默认音乐由 Codex 编写代码，在本地作曲和合成。无需 Suno 会员、音乐 API 或云端生成服务。** Suno 是可选音乐来源。
 
-[阅读完整流程](CODEX-VIDEO-WORKFLOW.md) · [复制启动提示词](PROMPT-TEMPLATE.md) · [音乐与回退](MUSIC.md) · [观看示例 MP4](dist/codex-preview.mp4)
+[阅读完整流程](CODEX-VIDEO-WORKFLOW.md) · [复制启动提示词](PROMPT-TEMPLATE.md) · [音乐与回退](MUSIC.md) · [案例研究与质量改进](REFERENCE-STUDY.md) · [观看示例 MP4](dist/codex-preview.mp4)
 
-![实际渲染的分镜](frames/storyboard.jpg)
+[![Video Workflow 产品宣传片](promo/dist/poster.jpg)](promo/dist/video-workflow.mp4)
+
+**流程自身的产品宣传片：[1080p 成片](promo/dist/video-workflow.mp4) / [720p 预览](promo/dist/workflow-preview.mp4) / [3D 源工程与重建](promo/README.md)。** 胶片、滚轮、分镜和声音装置由代码构建；配乐也是本地代码生成。
+
+基础 Canvas 实例的[分镜总览](frames/storyboard.jpg)与 [MP4](dist/codex-preview.mp4)仍保留，适合先验证最少依赖的生产路径。
 
 ## 用它制作你的视频
 
-把 [流程](CODEX-VIDEO-WORKFLOW.md)、[启动模板](PROMPT-TEMPLATE.md)、1–2 个参考和产品真实素材交给 Codex。工作顺序：
+用 Codex 打开本仓库时，`AGENTS.md` 会提供入口。也可以把 [流程](CODEX-VIDEO-WORKFLOW.md)、[启动模板](PROMPT-TEMPLATE.md)、1–2 个参考和产品真实素材交给 Codex。工作顺序：
 
 1. 明确观众、主张和观看场景。
 2. 将参考拆成构图、运动和节奏规则，选择合适的渲染器。
