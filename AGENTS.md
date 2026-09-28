@@ -1,16 +1,12 @@
-# Creating videos with this repository
+# 在本仓库制作视频
 
-When asked to make a video, read `CODEX-VIDEO-WORKFLOW.md`, `PROMPT-TEMPLATE.md`, `MUSIC.md`, and `REFERENCE-STUDY.md` first. Treat them as a production method, not a requirement to use every tool mentioned.
+制作前阅读 `CODEX-VIDEO-WORKFLOW.md`、`PROMPT-TEMPLATE.md`、`MUSIC.md` 和 `REFERENCE-STUDY.md`。`CODEX-VIDEO-WORKFLOW.md` 是唯一完整规范；其他文件分别提供任务输入、音乐实现说明和参考事实，不另建竞争规范。工具按内容选择，不要求用遍所有工具。
 
-- Identify the audience, one concrete claim, and the intended viewing context. Reuse information the user has already supplied.
-- Study the actual reference content available to you. Distinguish source-code evidence, still-frame observations, complete motion review, and listening review.
-- Compare three narrative mechanisms. Choose a direction when the brief is clear; do not add unnecessary approval stops.
-- Test product relevance, composition, subject detail, material, camera, motion, rhythm, and sound. A continuous transition alone does not fix a slide-like film.
-- Render actual style frames and a representative motion proof before committing to the complete production.
-- Use frame-addressable animation and an explicit cue map. Keep picture, music, Foley, and narration replaceable.
-- Music defaults to local procedural composition. Adapt `score.py` for the brief. Suno is optional; account, subscription, model, credit, or download limitations should not block a video unless the user explicitly requires that source. Record every fallback truthfully.
-- Keep the existing examples intact. Put a new film and its treatment, source, assets, audio, preview, final video, and verification records in its own directory.
-- Verify actual output proportionally. Never equate successful encoding with good design or claim a human listening review you did not perform.
-- Deliver a playable MP4 and reproducible source. Publishing or purchasing requires the user's authorization; prior authorization remains valid.
+- 复用用户已给的信息，明确观众、具体主张、观看场景、工具与音源约束、审阅范围。方向明确就推进，不增加无必要审批。
+- 按完整规范执行参考研究、统一视觉系统、状态叙事、真实关键帧、代表性连续样片、确定性逐帧制作和视觉批评循环。风格或动作不成立时先修改，不拿技术检查代替质量关口。
+- 如实区分参考成片观察、作者陈述、源码证据、缩略图覆盖、原尺寸细查、正常速动态观看和声音 review。用户要求全帧时不得降为抽帧；要求截图时实际截图。
+- 音乐未指定时可采用本地程序配乐。明确指定 Suno 不得程序音替代；要求保留原曲时保持来源、完整时长与原速，不擅自重配音。仅在任务允许时回退，并记录真实来源。
+- 保留现有例片。新作品的方案、源码、素材、音轨、预览、成片与审阅记录放在自己的目录。旧例片不代表已达到更新后的规范。
+- 交付可播放 MP4 和可重建源工程，明确未完成或未检查项。技术成功、自评分及 agent 赞同不是用户验收。购买与发布需要用户授权，既有授权继续有效。
 
-Example commands: root `python build.py` rebuilds the Canvas example with local music; `python -m unittest test_music.py` checks music selection and fallback. The optional Three.js product film has separate instructions in `promo/README.md`.
+实现入口：根目录 `python build.py` 重建 Canvas 实例；`python -m unittest test_music.py` 检查音乐选择与回退。可选 Three.js 产品片的命令见 `promo/README.md`。这些入口不是要求在文档编辑任务中运行检查。
